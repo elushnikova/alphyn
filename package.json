@@ -1,0 +1,9 @@
+{
+  "name": "alphyn",
+  "version": "1.0.0",
+  "description": "Site for Alphyn HMB team",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Lena Lushnikova",
+  "license": "ISC"
+}
