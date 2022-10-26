@@ -2,6 +2,10 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 tr {
   height: 42px;
 }
