@@ -10,131 +10,35 @@ tr {
   height: 42px;
 }
 
-th {
+th, 
+td {
+  font-size: 10pt;
+  text-align: left;
+  vertical-align: middle;
+  white-space: normal;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 2px 3px 2px 3px;
+  color: #000000;
+}
+
+th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+
+thead {
   background-color: #f7cb4d;
-  text-align: left;
   font-weight: bold;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  padding: 2px 3px 2px 3px;
 }
 
-.ritz .waffle a {
-  color: inherit;
-}
-
-.ritz .waffle .s8 {
-  background-color: #fef8e3;
-  text-align: left;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s0 {
+tbody > tr {
   background-color: #ffffff;
-  text-align: right;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
 }
 
-.ritz .waffle .s7 {
+tbody > tr:nth-child(even) {
   background-color: #fef8e3;
-  text-align: right;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
 }
 
-.ritz .waffle .s2 {
-  background-color: #ffffff;
-  text-align: center;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
 
-.ritz .waffle .s3 {
-  background-color: #ffffff;
-  text-align: right;
-  font-weight: bold;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s9 {
-  background-color: #fef8e3;
-  text-align: center;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s10 {
-  background-color: #fef8e3;
-  text-align: left;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: nowrap;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s1 {
-  background-color: #ffffff;
-  text-align: left;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
