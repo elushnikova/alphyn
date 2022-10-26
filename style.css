@@ -10,13 +10,9 @@ tr {
   height: 42px;
 }
 
-.ritz .waffle a {
-  color: inherit;
-}
-
-.ritz .waffle .s6 {
+th {
   background-color: #f7cb4d;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   color: #000000;
   font-family: 'Arial';
@@ -25,8 +21,11 @@ tr {
   white-space: normal;
   overflow: hidden;
   word-wrap: break-word;
-  direction: ltr;
   padding: 2px 3px 2px 3px;
+}
+
+.ritz .waffle a {
+  color: inherit;
 }
 
 .ritz .waffle .s8 {
@@ -129,36 +128,6 @@ tr {
 .ritz .waffle .s1 {
   background-color: #ffffff;
   text-align: left;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s4 {
-  background-color: #f7cb4d;
-  text-align: right;
-  font-weight: bold;
-  color: #000000;
-  font-family: 'Arial';
-  font-size: 10pt;
-  vertical-align: middle;
-  white-space: normal;
-  overflow: hidden;
-  word-wrap: break-word;
-  direction: ltr;
-  padding: 2px 3px 2px 3px;
-}
-
-.ritz .waffle .s5 {
-  background-color: #f7cb4d;
-  text-align: left;
-  font-weight: bold;
   color: #000000;
   font-family: 'Arial';
   font-size: 10pt;
