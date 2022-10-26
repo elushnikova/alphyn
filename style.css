@@ -4,16 +4,6 @@ body {
   line-height: 1.35;
 }
 
-header,
-footer,
-caption,
-table,
-th,
-td {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 @media screen {
   body {
     display: flex;
@@ -26,12 +16,41 @@ td {
   table,
   th,
   td {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
 
   footer {
     padding-bottom: 3rem;
+  }
+
+  thead {
+    background-color: #f7cb4d;
+  }
+
+  tbody>tr:nth-child(even) {
+    background-color: #fef8e3;
+  }
+
+  .place data span {
+    opacity: 0;
+    position: absolute;
+    cursor: default;
+  }
+
+  .place data::before {
+    display: inline-block;
+  }
+
+  .place data[value="1"]::before {
+    content: '🥇';
+  }
+
+  .place data[value="2"]::before {
+    content: '🥈';
+  }
+
+  .place data[value="3"]::before {
+    content: '🥉';
   }
 }
 
@@ -70,16 +89,7 @@ td {
 
 
 thead {
-  background-color: #f7cb4d;
   font-weight: bold;
-}
-
-tbody>tr {
-  background-color: #ffffff;
-}
-
-tbody>tr:nth-child(even) {
-  background-color: #fef8e3;
 }
 
 .name {
@@ -109,16 +119,14 @@ tbody>tr:nth-child(even) {
 }
 
 @media (min-width: 576px) {
-  .location {
-    display: table-cell;
-  }
-
   .tournament-subtitle {
     display: block;
   }
 }
 
 @media (min-width: 768px) {
+
+  .location,
   .month {
     display: table-cell;
   }
