@@ -54,18 +54,46 @@ body {
   }
 }
 
+h1,
+h3 {
+  font-family: 'Vollkorn', serif;
+  margin-bottom: 0;
+}
+
+header {
+  padding-bottom: 0;
+}
+
+p {
+  margin: 1rem 0 0;
+}
+
+h1 {
+  line-height: 1;
+}
+
 h1>small {
   font-size: 1.2rem;
-  display: inline-block;
+  display: block;
 }
 
 ul {
+  margin-top: 0.5rem;
   padding: 0;
   list-style-position: inside;
 }
 
+li:last-child {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
 table {
   border-collapse: collapse;
+}
+
+thead {
+  font-weight: bold;
 }
 
 caption,
@@ -85,11 +113,6 @@ td {
 
 .place {
   text-align: center;
-}
-
-
-thead {
-  font-weight: bold;
 }
 
 .name {
