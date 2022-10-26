@@ -1,29 +1,50 @@
 body {
   font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+header,
+footer,
+caption, 
+table,
+th,
+td {
+  padding: 1rem;
+}
+
+h1 > small {
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+footer {
+  padding-bottom: 3rem;
 }
 
 table {
   border-collapse: collapse;
 }
 
-tr {
-  height: 42px;
+caption,
+th {
+  text-align: left;
 }
 
 th, 
 td {
   font-size: 10pt;
-  text-align: left;
   vertical-align: middle;
   white-space: normal;
   overflow: hidden;
   word-wrap: break-word;
-  padding: 2px 3px 2px 3px;
   color: #000000;
 }
 
-th:last-child,
-td:last-child {
+.place {
   text-align: center;
 }
 
@@ -41,4 +62,28 @@ tbody > tr:nth-child(even) {
   background-color: #fef8e3;
 }
 
+@media screen {
+  .month,
+  .team,
+  .location {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 480px) {
+  .team {
+    display: table-cell;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .location {
+    display: table-cell;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .month {
+    display: table-cell;
+  }
+}
