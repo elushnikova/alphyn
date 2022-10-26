@@ -5,15 +5,16 @@ body {
 
 header,
 footer,
-caption, 
+caption,
 table,
 th,
 td {
   padding: 1rem;
 }
 
-h1 > small {
+h1>small {
   font-size: 1.2rem;
+  display: inline-block;
 }
 
 ul {
@@ -34,7 +35,7 @@ th {
   text-align: left;
 }
 
-th, 
+th,
 td {
   font-size: 10pt;
   vertical-align: middle;
@@ -54,19 +55,28 @@ thead {
   font-weight: bold;
 }
 
-tbody > tr {
+tbody>tr {
   background-color: #ffffff;
 }
 
-tbody > tr:nth-child(even) {
+tbody>tr:nth-child(even) {
   background-color: #fef8e3;
+}
+
+.name {
+  white-space: nowrap;
 }
 
 @media screen {
   .month,
   .team,
-  .location {
+  .location,
+  .tournament-subtitle {
     display: none;
+  }
+
+  .tournament {
+    min-width: 100px;
   }
 }
 
@@ -74,16 +84,28 @@ tbody > tr:nth-child(even) {
   .team {
     display: table-cell;
   }
+
+  .tournament {
+    min-width: 120px;
+  }
 }
 
 @media screen and (min-width: 576px) {
   .location {
     display: table-cell;
   }
+
+  .tournament-subtitle {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .month {
     display: table-cell;
+  }
+
+  .year {
+    display: none;
   }
 }
