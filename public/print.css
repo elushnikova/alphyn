@@ -1,0 +1,21 @@
+h3 {
+  margin-top: 3rem;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid;
+}
+
+th,
+td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+abbr {
+  text-decoration: none;
+}

@@ -1,0 +1,137 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  line-height: 1.35;
+}
+
+@media screen {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  header,
+  footer,
+  caption,
+  table,
+  th,
+  td {
+    padding: 1rem;
+  }
+
+  footer {
+    padding-bottom: 3rem;
+  }
+
+  thead {
+    background-color: #f7cb4d;
+  }
+
+  tbody>tr:nth-child(even) {
+    background-color: #fef8e3;
+  }
+
+  .place data span {
+    opacity: 0;
+    position: absolute;
+    cursor: default;
+  }
+
+  .place data::before {
+    display: inline-block;
+  }
+
+  .place data[value="1"]::before {
+    content: '🥇';
+  }
+
+  .place data[value="2"]::before {
+    content: '🥈';
+  }
+
+  .place data[value="3"]::before {
+    content: '🥉';
+  }
+}
+
+h1>small {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+th,
+td {
+  font-size: 10pt;
+  vertical-align: middle;
+  white-space: normal;
+  overflow: hidden;
+  word-wrap: break-word;
+  color: #000000;
+}
+
+.place {
+  text-align: center;
+}
+
+
+thead {
+  font-weight: bold;
+}
+
+.name {
+  white-space: nowrap;
+}
+
+.month,
+.team,
+.location,
+.tournament-subtitle {
+  display: none;
+}
+
+.tournament {
+  min-width: 100px;
+}
+
+
+@media (min-width: 480px) {
+  .team {
+    display: table-cell;
+  }
+
+  .tournament {
+    min-width: 120px;
+  }
+}
+
+@media (min-width: 576px) {
+  .tournament-subtitle {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .location,
+  .month {
+    display: table-cell;
+  }
+
+  .year {
+    display: none;
+  }
+}
