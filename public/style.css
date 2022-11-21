@@ -111,6 +111,16 @@ td {
   color: #000000;
 }
 
+abbr {
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  abbr {
+    text-decoration: underline dotted;
+  }
+}
+
 .place {
   text-align: center;
 }
@@ -148,7 +158,6 @@ td {
 }
 
 @media (min-width: 768px) {
-
   .location,
   .month {
     display: table-cell;
