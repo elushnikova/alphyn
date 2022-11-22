@@ -1,13 +1,23 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   line-height: 1.35;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
 @media screen {
   body {
     display: flex;
     justify-content: center;
+  }
+
+  a {
+    border-bottom: 1px solid #f7cb4d;
+    padding-bottom: 1px;
   }
 
   header,
@@ -27,7 +37,7 @@ body {
     background-color: #f7cb4d;
   }
 
-  tbody>tr:nth-child(even) {
+  tbody > tr:nth-child(even) {
     background-color: #fef8e3;
   }
 
@@ -42,21 +52,21 @@ body {
   }
 
   .place data[value="1"]::before {
-    content: '🥇';
+    content: "🥇";
   }
 
   .place data[value="2"]::before {
-    content: '🥈';
+    content: "🥈";
   }
 
   .place data[value="3"]::before {
-    content: '🥉';
+    content: "🥉";
   }
 }
 
 h1,
 h3 {
-  font-family: 'Vollkorn', serif;
+  font-family: "Vollkorn", serif;
   margin-bottom: 0;
 }
 
@@ -72,7 +82,7 @@ h1 {
   line-height: 1;
 }
 
-h1>small {
+h1 > small {
   font-size: 1.2rem;
   display: block;
 }
@@ -139,7 +149,6 @@ abbr {
 .tournament {
   min-width: 100px;
 }
-
 
 @media (min-width: 480px) {
   .team {
