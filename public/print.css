@@ -19,3 +19,7 @@ td {
 abbr {
   text-decoration: none;
 }
+
+footer {
+  display: none;
+}
