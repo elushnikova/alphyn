@@ -121,16 +121,6 @@ td {
   color: #000;
 }
 
-abbr {
-  text-decoration: none;
-}
-
-@media (hover: hover) {
-  abbr {
-    text-decoration: underline dotted;
-  }
-}
-
 .place {
   text-align: center;
 }
@@ -175,4 +165,20 @@ abbr {
   .year {
     display: none;
   }
+}
+
+dl > div {
+  margin-bottom: 0.1rem;
+}
+
+dt, dd {
+  display: inline;
+}
+
+dt::after {
+  content: " — ";
+}
+
+dd {
+  margin: 0;
 }
