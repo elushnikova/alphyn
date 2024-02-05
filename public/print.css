@@ -16,6 +16,10 @@ td {
   padding-bottom: 0.1rem;
 }
 
+abbr {
+  text-decoration: none;
+}
+
 .contact {
   page-break-after: always;
 }
