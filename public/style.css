@@ -211,7 +211,9 @@ mark.add {
   background-color: #d4edda;
 }
 
-.note {
+.note,
+.source .format {
+  font-size: 0.75em;
   color: #6c757d;  
 }
 
