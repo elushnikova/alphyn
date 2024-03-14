@@ -88,10 +88,13 @@ h1 > small {
   display: block;
 }
 
+ul, 
+ol {
+  padding-left: 1.5rem;
+}
+
 main.home ul {
   margin-top: 0.5rem;
-  padding: 0;
-  list-style-position: inside;
 }
 
 li.no-bullet {
@@ -187,7 +190,50 @@ dd {
 main.rules {
   box-sizing: border-box;
   min-width: 320px;
-  padding: 4rem 1em 8rem;
+  max-width: 1024px;
+  width: 100%;
+}
+
+main.rules section {
+  margin: 3rem 0;
+}
+
+main.rules .section-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.rules * {
+  margin: 0;
+}
+
+main.rules .section-content > * {
+  flex: 1 0 fit-content ;
+}
+
+main.rules h1 {
+  padding: 3em 1rem 0;
+}
+
+main.rules h2 {
+  padding: 0.2em 1rem 0;
+  background-color: oklch(95% 0.08 94);
+}
+
+main.rules h3 {
+  margin: 0 -1rem;
+  padding: 0.2em 1rem 0;
+  line-height: 1.8;
+  background-color: oklch(98% 0.03 94);
+}
+
+main.rules article {
+  padding: 0 1em 2em;
+}
+
+main.rules article h3 { 
+  margin-top: 0; 
+  margin-bottom: 0.5em;
 }
 
 main.rules ul,
@@ -196,18 +242,16 @@ main.rules ol {
 }
 
 main.rules li {
-  line-height: 2;
-}
-
-main.rules .nested li {
   line-height: 1.5;
+  padding-bottom: 0.5em;
 }
 
-main.rules .nested li:last-child {
-  margin-bottom: 0.5rem;
+main.rules .nested {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-mark.add {
+mark.add { 
   background-color: #d4edda;
 }
 
@@ -221,6 +265,6 @@ mark.add {
   .note {
     display: block;
     line-height: 1;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
