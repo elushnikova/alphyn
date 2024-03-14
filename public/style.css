@@ -217,14 +217,19 @@ main.rules h1 {
 
 main.rules h2 {
   padding: 0.2em 1rem 0;
-  background-color: oklch(95% 0.08 94);
+  background-color: #ffeeb5;
 }
 
 main.rules h3 {
   margin: 0 -1rem;
   padding: 0.2em 1rem 0;
   line-height: 1.8;
-  background-color: oklch(98% 0.03 94);
+  background-color: #fff9e2;
+}
+
+@supports (color: oklch(0% 0 0)) {
+  main.rules h2 { background-color: oklch(95% 0.08 94); }
+  main.rules h3 { background-color: oklch(98% 0.03 94); }
 }
 
 main.rules article {
